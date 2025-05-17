@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مغامرة الفضاء البيئية</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="hud">
+            <div id="score">النقاط: <span>0</span></div>
+            <div id="energy">
+                الطاقة: 
+                <div class="energy-bar">
+                    <div class="energy-fill"></div>
+                </div>
+            </div>
+        </div>
+        <div id="game-over" class="hidden">
+            <div class="game-over-content">
+                <h2>انتهت اللعبة!</h2>
+                <p>النقاط النهائية: <span id="final-score">0</span></p>
+                <button id="restart-button">العب مرة أخرى</button>
+            </div>
+        </div>
+        <div id="start-screen">
+            <div class="start-content">
+                <h1>مغامرة الفضاء البيئية</h1>
+                <p>قم بجمع البلورات الخضراء وتجنب النفايات الفضائية!</p>
+                <button id="start-button">ابدأ اللعب</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="js/spaceship.js"></script>
+    <script src="js/space-objects.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html> 
